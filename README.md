@@ -109,4 +109,4 @@ Firstly, the code would need to be altered to fit the specific csv file used. Th
 
 Similarly, the proper output file and desired data would need to be specified as well. 
 
-Lastly, depending on the type and scope of election and audit, you will need to accomodate for different ranges of data. Audits on senatorial elections may have different coding requirements than local elections or elections with a high number of candidates as opposed to a few or even a single candidate. 
+Lastly, depending on the type and scope of election and audit, you will need to accomodate for different ranges of data. Audits on senatorial elections may have different coding requirements than local elections or elections with a high number of candidates as opposed to a few or even a single candidate. More complex audits may call for more conditionals and loops to get the informated desired. However, the structure of the proposed loops and conditionals included above still provide a solid foundation for further analysis. 

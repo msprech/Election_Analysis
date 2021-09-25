@@ -2,6 +2,20 @@
 
 ## Overview of Election Audit 
 
+I was tasked with conducting an election audit of a congressional precinct in Colorado to find the following information: 
+
+* Total vote count 
+* Vote count per county 
+* Percentage of total vote per county 
+* County with the largest voter turnout 
+* Vote count per candidate
+* Percentage of total vote per candidate
+* Winning candidate, vote count, and percentage of total vote
+
+### Purpose of Analysis
+
+The purpose of the analysis was to not only confirm the results of the election, but also to automate the process using loops and conditionals in python. This process and resulting code patterns could then be applied to other audits, including congressional and senatorial districts, as well as local elections. 
+
 ## Election Audit Results 
 
 The following results detailing the outcome of the Colorado Congressional election were printed to the command line. Further analysis breaks down the code used to provide this summary.    
@@ -88,3 +102,11 @@ The winning candidate and vote statistics were as follows:
 * Winning Percentage: 73.8% of the total vote 
 
 ## Election Audit Summary 
+
+The use of conditionals and loops in this election audit has made the code versatile and easily applicable to other election audits. The structure of the code focuses on declaring variables, lists, and dictionaries that will allow us to iterate through the csv file and automate necessary calculations. The for loops included iterate through the csv file to create lists of candidates and counties, dictionaries of candidate and candidate vote counts, and county and county vote counts, and conditionals to determine the winning candidate and county with the largest voter turnout. This overall pattern could easily be applied to another election audit with a few modifications. 
+
+Firstly, the code would need to be altered to fit the specific csv file used. This includes changing the path from which to load the file as well as ensuring that any indexes used to reference columns within the file are accurately updated. 
+
+Similarly, the proper output file and desired data would need to be specified as well. 
+
+Lastly, depending on the type and scope of election and audit, you will need to accomodate for different ranges of data. Audits on senatorial elections may have different coding requirements than local elections or elections with a high number of candidates as opposed to a few or even a single candidate. 

@@ -40,7 +40,7 @@ for row in reader:
   county_votes[county_name] += 1
 
 ```
-I then used another for loop to iterate through the county_votes dictionary and calculate the total vote count per county and the vote percentage of the total vote per county. Both of these results were printed into the election_results text file using f-string statements.  
+I then used another for loop to iterate through the "county_votes" dictionary and calculate the total vote count per county and the vote percentage of the total vote per county. Both of these results were printed into the election_results text file using f-string statements.  
 
 
 ```
@@ -63,7 +63,7 @@ The final results per county were as follows.
 
 ### Candidate Vote Results 
 
-Votes per candidate were produced using similar code to the county results process. Within the for loop, I set the variable candidate_name equal to row[2], or the index of the csv file containing the candidate name. This variable was then used in a conditional statement to iterate through each row of the file, adding unique candidate names to the declared empty list, "candidate_options." By using a dictionary, "candidate_votes," to hold both the candidate name and votes received, I initialized the votes received to 0 and then added a vote to the vote count every time the candidate's name appeared in the file. 
+Votes per candidate were produced using similar code to the county results process. Within the for loop, I set the variable "candidate_name" equal to row[2], or the index of the csv file containing the candidate name. This variable was then used in a conditional statement to iterate through each row of the file, adding unique candidate names to the declared empty list, "candidate_options." By using a dictionary, "candidate_votes," to hold both the candidate name and votes received, I initialized the votes received to 0 and then added a vote to the vote count every time the candidate's name appeared in the file. 
 
 I used the dictionary to calculate the total number of votes per candidate, as well as their vote percentage out of the total number of votes. These results were written to the election_results text file using the following f-string statement. 
 
@@ -83,7 +83,7 @@ The final results per candidate were as follows.
 
 ### Winning Candidate 
 
-While iterating through the candidate_votes dictionary, the following conditional statement was used to determine the winning candidate, vote count, and percentage. The "winning_candidate" variable, the "winning_count" variable, and the "winning_percentage" variable were all declared earlier in the code. 
+While iterating through the "candidate_votes" dictionary, the following conditional statement was used to determine the winning candidate, vote count, and percentage. The "winning_candidate" variable, the "winning_count" variable, and the "winning_percentage" variable were all declared earlier in the code. 
 
 ```
 
